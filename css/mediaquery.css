@@ -1,0 +1,106 @@
+@media(max-width:991px){
+    .menu{
+        padding: 20px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(119, 154, 155);
+        display: none;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    .menu .navbar ul li a:hover{
+        color: white;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .logo{
+        display: none;
+    }
+    .header{
+        min-height: 0vh;
+        padding: 100px 30px 50px 30px;
+    }
+
+    .header-content{
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-txt{
+        margin-bottom: 20px;
+    }
+
+    /*oferts*/
+    .oferts{
+        padding: 30px;
+    }
+    .oferts-content{
+        flex-direction: column;
+
+    }
+    .oferts-1{
+        margin-bottom: 30px;
+    }
+    .logan-1{
+        order: -2;
+        margin-bottom: 20px;
+    }
+    /*promotion va por 1:15.53 por terminar g k*/
+    .promotion{
+        padding: 30px;
+    }
+    .promotion-content{
+        flex-direction: column;
+        text-align: center;
+    }
+    .promotion-txt{
+        margin-bottom: 25px;
+    }
+    .promotion-img img{
+        width: 200px;
+    }
+
+    /*product*/
+    .products{
+       padding: 30px;
+    }
+    .product-content{
+        grid-template-columns: repeat(1 , 1fr);
+        gap: 0;
+    }
+    .oferts-1 img{
+        width: 180px;
+    }
+
+    .blog{
+        padding: 30px;
+    }
+    .blog-content{
+        flex-direction: column;
+        text-align: center;
+    }
+    .blog-1 img{
+        width: 400px;
+        margin-top: 30px;
+    }
+
+    .footer{
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer h3{
+        margin-top: 20px;
+    }
+
+}

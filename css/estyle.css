@@ -1,0 +1,368 @@
+/* 
+va por 21:18 
+
+ https://www.youtube.com/watch?v=mfP6ugrbtp0&t=567s
+
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    background: linear-gradient(
+        90deg,
+        rgba(241,237,220,1)0%,
+        rgba(255,237,253,1)50%,
+        rgba(252,246,232,1)100%
+    );
+    padding: 70px 0;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: #ff362a;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.logo span {
+    color: #1303f7;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    display: block;
+    color: black;
+    padding: 20px;
+}
+
+.menu .navbar ul li a:hover{
+    color: #ff362a;
+}
+
+#menu{
+    display: none;
+    /*ocultar el checkbox*/
+}
+
+.menu-icono{
+    width: 30px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+   /*oculta el icono menu*/ 
+}
+
+/*carrito 41:26*/
+
+.submenu{
+    position: relative;
+}
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito{
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    background-color: #4e485076;
+    backdrop-filter: blur(10px);
+   padding: 20px;
+    min-width: 400px;
+}
+
+table {
+    width: 100%;
+}
+th, td{
+   color: white;
+   padding: 20px;
+}
+
+/* esta calse se agragar con js 47.56*/
+.borrar {
+    background-color: #ff362a;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+
+.header-content{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.header-txt{
+    flex-basis: 40%;
+}
+.header-txt h1{
+    font-size: 70px;
+    line-height: 1;
+    color: #181818;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+p{
+    color: #484848;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn-1 , .btn-3{
+    display: inline-block;
+    padding: 10px 30px;
+    color: #ff362a;
+    border:  1px solid  #ff362a;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.btn-1:hover , .btn-3:hover{
+    background-color: #ff362a;
+    color: white;
+}
+
+.header-img{
+    flex-basis: 60%;
+}
+
+/*oferts 51:27*/
+
+.oferts{
+    padding: 100px 0;
+}
+
+h2{
+    font-size: 40px;
+    line-height: 1;
+    color: #181818;
+    margin-bottom: 10px;
+}
+
+.oferts-content{
+   display: flex;
+   justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.oferts-1{
+    flex-basis: calc(30% - 30px);
+    box-shadow:0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 25px;
+    background-color: #f7fafa;
+    border-radius: 15px;
+}
+
+.oferts img{
+    width: 130px;
+    height: 170px;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-size: 20px;
+    line-height: 1;
+    color: #181818;
+    margin-bottom: 10px;
+}
+
+.product-txt p {
+    margin-bottom: 10px;
+}
+.precio{
+    color: #ff362a;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.btn-3{
+    padding: 4px 20px;
+}
+
+.logan-1{
+    flex-basis: 40%;
+    background: linear-gradient(
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    ),
+    url(../sillas\ imagenes\ paginas\ web\ png/ch1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.logan-1 h3{
+    font-size: 30px;
+    color:white;
+    text-transform: uppercase;
+}
+
+.logan-1 p{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fdfdfd;
+    margin-bottom: 20px;
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 8px 30px;
+    border:  1px solid #f7fafa;
+    color: white;
+}
+
+/*promotion 1:00:47*/
+
+.promotion{
+    padding: 80px 0;
+    background-color:whitesmoke;
+}
+
+.promotion-content{
+    display: flex;
+  
+}
+
+.promotion-txt{
+    flex-basis: 50%;
+}
+
+.promotion-txt h2{
+    margin-bottom: 25px;
+    
+}
+.promotion-img{
+    flex-basis: 50%;
+    text-align: center;
+}
+.promotion-img img{
+    width: 300px;
+    margin-right: 20px;
+}
+
+/*productos*/
+.products{
+    padding: 100px 0;
+    text-align: center;
+}
+
+.product-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    margin-bottom: 50px;
+}
+.oferts-1 img{
+    width: 200px;
+}
+
+/*blog*/
+
+.blog{
+    padding: 50px 0 100px 0;
+}
+.blog h2{
+    margin-bottom: 30px;
+}
+
+.blog-content{
+    display: flex;
+    justify-content: space-between;
+}
+.blog-1{
+    flex-basis: calc(33.3% - 20px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.blog-txt{
+    padding: 40px;
+}
+.btn-4{
+    display: inline-block;
+    border: 1px solid #ff362a;
+    padding: 8px 25px;
+    border-radius: 10px;
+    font-size: 17px;
+    text-transform: capitalize;
+    color: #181818;
+}
+
+.footer{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3 {
+    font-size: 17px;
+    color: #ff362a;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.link a {
+    font-size: 17px;
+    color: #181818;
+    display: block;
+    padding: 5px;
+}
+.link a:hover{
+    color: #ff362a;
+    text-transform: uppercase;
+}
+
+
+
+
+
+/*  1:05:31 va por hay*/
+
